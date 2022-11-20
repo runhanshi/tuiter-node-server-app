@@ -9,6 +9,7 @@ const UserController = (app) => {
     app.put('/api/users/:uid', updateUser);
 }
 
+
 const findUsers = (req, res) => {
     const type = req.query.type
     if(type) {
