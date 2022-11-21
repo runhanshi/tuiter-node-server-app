@@ -7,6 +7,7 @@ const findTuits = (req, res) =>
 const createTuit = (req, res) => {
     const newTuit = req.body;
     newTuit.image = "/images/nasa.png";
+    newTuit.handle ="@nasa";
     newTuit._id = (new Date()).getTime()+'';
     newTuit.likes = 0;
     newTuit.liked = false;
