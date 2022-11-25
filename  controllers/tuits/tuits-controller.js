@@ -1,7 +1,7 @@
-import * as tuitsDao from '../../tuits/tuits-dao.js'
+import * as tuitsDao from '../tuits/tuits-dao.js'
 
 const findTuits =  async (req, res) => {
-    const tuits = await tuitsDao.findTuits()
+    const tuits = await tuitsDao.findTuits();
     res.json(tuits);
 }
 
