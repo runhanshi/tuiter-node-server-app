@@ -1,5 +1,5 @@
 import express from 'express';
-
+import cors from 'cors'
 import HelloController from "./ controllers/hello-controller.js";
 import UserController
     from "./ controllers/users/users-controller.js"
@@ -13,7 +13,6 @@ mongoose.connect('mongodb+srv://runhan:970329@cluster1.3q7rbw3.mongodb.net/tuite
 
 
 const app = express();
-const cors = require('cors');
 const corsOptions ={
     origin:'http://localhost:3000',
     credentials:true,            //access-control-allow-credentials:true
