@@ -15,7 +15,9 @@ mongoose.connect('mongodb+srv://runhan:970329@cluster1.3q7rbw3.mongodb.net/tuite
 const app = express();
 const corsOptions ={
     origin:'*',
-    credentials:true,            //access-control-allow-credentials:true
+    credentials:true,
+    methods: 'GET, POST, OPTIONS, PUT, PATCH, DELETE',
+    headers: 'X-Requested-With,content-type',//access-control-allow-credentials:true
     optionSuccessStatus:200
 }
 app.use(cors(corsOptions));
