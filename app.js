@@ -14,7 +14,7 @@ mongoose.connect('mongodb+srv://runhan:970329@cluster1.3q7rbw3.mongodb.net/tuite
 
 const app = express();
 const corsOptions ={
-    origin:'http://localhost:3000',
+    origin:'*',
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
