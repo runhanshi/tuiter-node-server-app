@@ -7,7 +7,8 @@ const schema = new Schema({
     liked: Boolean,
     dislikes:Number,
     disliked: Boolean,
-    versionKey: false,
 
-}, {collection: 'tuits'});
+},
+    {collection: 'tuits'}
+    , { versionKey: false });
 export default schema;
