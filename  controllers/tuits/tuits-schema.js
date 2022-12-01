@@ -9,6 +9,6 @@ const schema = new Schema({
     disliked: Boolean,
 
 },
-    {collection: 'tuits'}
-    , { versionKey: false });
+    {collection: 'tuits',
+        toObject: { versionKey: false }});
 export default schema;
